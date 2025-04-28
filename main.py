@@ -4,7 +4,7 @@ import uvicorn
 
 app = FastAPI()
 
-@app.get("/recipes")
+@app.get("/")
 async def read_recipes():
     return [{"id": 1, "title": "Spaghetti"}, {"id": 2, "title": "Tacos"}]
 
